@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React , {useState} from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+       <div className="container my-3">
+      <h1> Presale</h1>
+      <div className="mb-3">
+        <textarea
+          className="form-control"
+          
+          id="mybox"
+          rows="1"
+        ></textarea>
+      </div>
+    
+      <button type="button" className="btn btn-primary mx-2 my-2" >
+        Buy Token
+      </button>
     </div>
+    <div className="container my-3">
+      <h3> Enter BNB Amount</h3>
+      <p>
+     
+      </p>
+    </div>
+    
+    
+    </>
   );
 }
 
